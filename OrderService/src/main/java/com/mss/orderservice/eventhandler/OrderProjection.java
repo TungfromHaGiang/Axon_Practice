@@ -1,5 +1,8 @@
 package com.mss.orderservice.eventhandler;
 
+import com.mss.axonorderservicecommon.event.OrderCancelledEvent;
+import com.mss.axonorderservicecommon.event.OrderCompletedEvent;
+import com.mss.axonorderservicecommon.event.OrderCreatedEvent;
 import com.mss.orderservice.entity.Order;
 
 import com.mss.orderservice.repository.OrderRepository;

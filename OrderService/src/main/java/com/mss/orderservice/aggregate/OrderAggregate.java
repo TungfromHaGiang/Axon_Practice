@@ -1,12 +1,12 @@
 package com.mss.orderservice.aggregate;
 
-import com.mss.orderservice.command.CancelOrderCommand;
-import com.mss.orderservice.command.CompleteOrderCommand;
-import com.mss.orderservice.command.CreateOrderCommand;
-import com.mss.orderservice.common.OrderStatus;
-import com.mss.orderservice.envent.OrderCancelledEvent;
-import com.mss.orderservice.envent.OrderCompletedEvent;
-import com.mss.orderservice.envent.OrderCreatedEvent;
+import com.mss.axonorderservicecommon.command.CancelOrderCommand;
+import com.mss.axonorderservicecommon.command.CompleteOrderCommand;
+import com.mss.axonorderservicecommon.command.CreateOrderCommand;
+import com.mss.axonorderservicecommon.common.OrderStatus;
+import com.mss.axonorderservicecommon.event.OrderCancelledEvent;
+import com.mss.axonorderservicecommon.event.OrderCompletedEvent;
+import com.mss.axonorderservicecommon.event.OrderCreatedEvent;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
 import org.axonframework.modelling.command.AggregateIdentifier;

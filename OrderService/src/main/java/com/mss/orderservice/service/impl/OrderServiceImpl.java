@@ -1,7 +1,7 @@
 package com.mss.orderservice.service.impl;
 
-import com.mss.orderservice.command.CreateOrderCommand;
-import com.mss.orderservice.common.OrderStatus;
+import com.mss.axonorderservicecommon.command.CreateOrderCommand;
+import com.mss.axonorderservicecommon.common.OrderStatus;
 import com.mss.orderservice.entity.Order;
 import com.mss.orderservice.repository.OrderRepository;
 import com.mss.orderservice.request.OrderRequest;

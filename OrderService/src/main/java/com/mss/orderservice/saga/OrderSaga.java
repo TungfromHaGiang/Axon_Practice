@@ -1,12 +1,17 @@
 package com.mss.orderservice.saga;
-import com.mss.orderservice.command.*;
-import com.mss.orderservice.common.OrderStatus;
-import com.mss.orderservice.common.PaymentStatus;
-import com.mss.orderservice.common.ShippingStatus;
-import com.mss.orderservice.envent.OrderCreatedEvent;
-import com.mss.orderservice.envent.PaymentProcessedEvent;
-import com.mss.orderservice.envent.ShippingCancelledEvent;
-import com.mss.orderservice.envent.ShippingProcessedEvent;
+
+import com.mss.axonorderservicecommon.command.CancelOrderCommand;
+import com.mss.axonorderservicecommon.command.CancelPaymentCommand;
+import com.mss.axonorderservicecommon.command.CompleteOrderCommand;
+import com.mss.axonorderservicecommon.command.ProcessPaymentCommand;
+import com.mss.axonorderservicecommon.command.ProcessShippingCommand;
+import com.mss.axonorderservicecommon.common.OrderStatus;
+import com.mss.axonorderservicecommon.common.PaymentStatus;
+import com.mss.axonorderservicecommon.common.ShippingStatus;
+import com.mss.axonorderservicecommon.event.OrderCreatedEvent;
+import com.mss.axonorderservicecommon.event.PaymentProcessedEvent;
+import com.mss.axonorderservicecommon.event.ShippingCancelledEvent;
+import com.mss.axonorderservicecommon.event.ShippingProcessedEvent;
 import org.axonframework.commandhandling.gateway.CommandGateway;
 import org.axonframework.modelling.saga.SagaEventHandler;
 import org.axonframework.modelling.saga.StartSaga;
