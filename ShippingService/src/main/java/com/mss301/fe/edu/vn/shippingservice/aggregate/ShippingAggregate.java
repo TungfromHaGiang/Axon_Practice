@@ -1,5 +1,10 @@
 package com.mss301.fe.edu.vn.shippingservice.aggregate;
 
+import com.mss.axonorderservicecommon.command.CancelShippingCommand;
+import com.mss.axonorderservicecommon.command.ProcessShippingCommand;
+import com.mss.axonorderservicecommon.common.ShippingStatus;
+import com.mss.axonorderservicecommon.event.ShippingCancelledEvent;
+import com.mss.axonorderservicecommon.event.ShippingProcessedEvent;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;
@@ -30,8 +35,8 @@ public class ShippingAggregate {
                 command.getOrderId(),
                 command.getUserId(),
                 command.getPaymentId(),
-                status,
-                command.getAmount()
+                command.getAmount(),
+                status
         );
 
         // Kích hoạt Event

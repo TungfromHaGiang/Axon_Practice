@@ -1,6 +1,6 @@
 package com.mss.axonorderservicecommon.event;
 
-import com.mss.orderservice.common.OrderStatus;
+import com.mss.axonorderservicecommon.common.OrderStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

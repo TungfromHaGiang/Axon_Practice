@@ -1,10 +1,10 @@
 package com.mss301.fe.edu.vn.paymentservice.aggregate;
 
-import com.mss301.orderservice.command.CancelPaymentCommand;
-import com.mss301.orderservice.command.ProcessPaymentCommand;
-import com.mss301.orderservice.common.PaymentStatus;
-import com.mss301.orderservice.event.PaymentCancelledEvent;
-import com.mss301.orderservice.event.PaymentProcessedEvent;
+import com.mss.axonorderservicecommon.command.CancelPaymentCommand;
+import com.mss.axonorderservicecommon.command.ProcessPaymentCommand;
+import com.mss.axonorderservicecommon.common.PaymentStatus;
+import com.mss.axonorderservicecommon.event.PaymentCancelledEvent;
+import com.mss.axonorderservicecommon.event.PaymentProcessedEvent;
 import lombok.NoArgsConstructor;
 import org.axonframework.commandhandling.CommandHandler;
 import org.axonframework.eventsourcing.EventSourcingHandler;

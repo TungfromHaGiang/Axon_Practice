@@ -1,5 +1,8 @@
 package com.mss301.fe.edu.vn.shippingservice.eventhandler;
 
+import com.mss.axonorderservicecommon.event.ShippingCancelledEvent;
+import com.mss.axonorderservicecommon.event.ShippingCompletedEvent;
+import com.mss.axonorderservicecommon.event.ShippingProcessedEvent;
 import com.mss301.fe.edu.vn.shippingservice.entity.Shipping;
 import com.mss301.fe.edu.vn.shippingservice.repository.ShippingRepository;
 import org.axonframework.commandhandling.gateway.CommandGateway;
